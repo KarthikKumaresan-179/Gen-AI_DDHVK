@@ -52,25 +52,22 @@ Streamlit: Simple web app frontend that pulls results from both models and shows
 
 Project Structure:
 
-CNN
+CNN/
+├── dataset/ # Training and testing datasets
+├── models/ # CNN architectures
+├── train.py # CNN training script
+├── evaluate.py # CNN evaluation script
+├── requirements.txt # CNN dependencies
 
-*dataset/ → Training and testing datasets
-*models/ → CNN architectures
-*train.py → CNN training script
-*evaluate.py → CNN evaluation script
-*requirements.txt → CNN dependencies
+transformers/
+├── preprocessing.py # Data cleaning
+├── train_clinicalbert.py# Fine-tuning ClinicalBERT
+├── retrieve.py # Semantic retrieval functions
+├── generate_t5.py # T5 summarization
+├── requirements.txt # Transformer dependencies
 
-Transformers
-
-*preprocessing.py → Data cleaning
-*train_clinicalbert.py → Fine-tuning ClinicalBERT
-*retrieve.py → Semantic retrieval functions
-*generate_t5.py → T5 summarization
-*requirements.txt → Transformer dependencies
-
-Streamlit
-
-*MedicalAI.py → Main Streamlit frontend
+streamlit/
+├── MedicalAI.py # Main Streamlit frontend
 
 Setup Instructions:
 
